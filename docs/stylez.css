@@ -12,7 +12,8 @@
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-    position: sitcky;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     z-index: 999;
 }
@@ -386,7 +387,11 @@
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/RockStackGit.jpg');
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(17,17,17,0.6) 100%), 
+    url('images/RockStackGit.jpg');
     background-size: cover;
     position: relative;
     color: #fff
@@ -394,11 +399,10 @@
 
 .PreviewCards__card:nth-child(2){
     background-image: linear-gradient(
-        to bottom,
-         rgba(0,0,0,0) 0%, 
-         rgba(17,17,17,0.6) 100%
-         ), 
-         url('/images/DriversLicenseCover.jpg');
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(17,17,17,0.6) 100%), 
+    url('images/DriversLicenseCover.jpg');
 }
 
 .PreviewCards h2{
