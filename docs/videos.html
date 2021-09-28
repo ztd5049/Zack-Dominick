@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <style>
-            .firstDiv{
-             border: 5px outset #DCDCDC;
-             background-color: #00FA9A;
-             text-align; center;
-             
-             a:link {
-             color: 98FB98;
-             
-             a:visited {
-             color: 00FF7F;
-    }
-        </style>
-        <title>Videos Page</title>
-        <!-- This is how you make a comment --> 
-        <!--This area of your website holds metadata and 
-            important information that can be linked to this document-->
-    </head>
-    <body>
-        <!-- This body element holds the display area -->
-        <p>  </p>
-        <h1>Zack Dominick</h1>
-        <div class="firstDiv">
-            <nav>
-                <a href="index.html"><h3>Homepage</h3></a> | <a href="pictures.html"><h3>Pictures</h3></a> | <a href="videos.html"><h3>Videos</h3></a> | <a
-                    href="music.html"><h3>Music</h3></a> | <a href="about.html"><h3>About page</h3></a>
-            </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZackDominickWebsite</title>
+    <link rel="stylesheet" href="stylez.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html" id="navbar__logo">
+                    <img class="WaveF" src="images/WaveformPiano70.png" alt="WaveformPiano"></img>
+                Zack Dominick</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pictures.html" class="navbar__links"> Pictures </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/videos.html" class="navbar__links"> Videos </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/about.html" class="button"> About Me </a>
+                </li>
+            </ul>
         </div>
-        <h2>Video Gallery:</h2>
-        <hr/>
-    </body>
+    </nav>
+</body>
 </html>
