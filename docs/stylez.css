@@ -224,7 +224,7 @@
     font-size: 3rem;
     font-weight: 500;
 }
-
+/*fffffffffffffffff*/
 .main__btn{
     font-size: 1rem;
     background-image:linear-gradient(to right, #20B2AA 0%, #7FFFD4 100%);
@@ -363,6 +363,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-top: 100px;
+    padding-top: 20px;
 }
 
 .PreviewCards__container{
@@ -427,6 +428,197 @@
 
     .PreviewCards h1{
         font-size: 2rem;
-        margin-top: 21rem;
+        margin-top: 27rem;
+    }
+}
+
+
+
+/* Picture Gallery */
+
+.PictureGallery{
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200vh;
+}
+
+.PictureGallery h1{
+    background-color: #7cfc00;
+    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-size: 100%;
+    margin-bottom: 0rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 80px;
+    padding-top: 0px;
+}
+
+.PictureGallery__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.PictureGallery h3{
+    position: absolute;
+    top: 535px;
+    left: 0px;
+    font-size: 25px;
+}
+
+.PictureGallery p{
+    position: absolute;
+    top: 570px;
+    left: 0px;
+}
+
+.PictureGallery__pic {
+    margin: 3rem;
+    height: 525px;
+    width: 400px;
+    margin-bottom: 200px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,0) 100%), 
+    url('images/RockStackGit.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff
+}
+
+.PictureGallery__pic:nth-child(2){
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,0) 100%), 
+    url('images/MeadowGit.jpg');
+}
+
+.PictureGallery__pic:nth-child(3){
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,0) 100%),  
+    url('images/TreeTopsGit.jpg');
+}
+
+.PictureGallery__pic:nth-child(4){
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,0) 100%),  
+    url('images/Bridge.jpg');
+}
+
+.PictureGallery__pic:nth-child(5){
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,0) 100%),  
+    url('images/BridgeStraight.jpg');
+}
+
+.PictureGallery__pic:nth-child(6){
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,0) 100%),  
+    url('images/Powerlines.jpg');
+}
+
+@media screen and (max-width: 1420px){
+    .PictureGallery{
+        height: 300vh;
+    }
+}
+
+@media screen and (max-width: 944px){
+    .PictureGallery{
+        height: 540vh;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .PictureGallery{
+        height: 570vh;
+    }
+
+    .PictureGallery h1{
+        font-size: 2rem;
+        margin-top: 24rem;
+    }
+}
+
+/*Writings Page*/
+
+.writings__container{
+    align-items: center;
+    justify-self: center;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    background-color: #191919;
+    z-index: 1;
+    width: 100%;
+    height: 700px;
+    max-width: 1000px;
+}
+
+.writings__container h1{
+    background-color: #7cfc00;
+    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-size: 100%;
+    font-size: 3rem;
+    position: absolute;
+    top: 110px;
+    max-width: 1000px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.writings__container h2{
+    font-size: 2.2rem;
+    color: #fff;
+    position: absolute;
+    top: 205px;
+    max-width: 1000px;
+}
+
+.writings__container p{
+    top: 240px;
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    margin-right: 40px;
+    max-width: 1000px;
+}
+
+@media screen and (max-width: 740px){
+    .writings__container{
+        height: 300vh;
+        margin: 0 40px;
+        padding: 0 0;
+    }
+
+    .writings__container h1{
+        top: 410px;
+    }
+
+    .writings__container h2{
+        top: 510px;
+    }
+
+    .writings__container p{
+        top: 550px;
     }
 }
