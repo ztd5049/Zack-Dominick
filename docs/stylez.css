@@ -599,8 +599,28 @@
     font-size: 1.5rem;
     color: #fff;
     position: absolute;
-    margin-right: 40px;
     max-width: 1000px;
+}
+
+.WP__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-top: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color:#7FFFD4;
+    color: #131313;
+}
+
+.WP__button:hover{
+    background: #4837ff;
+    transition: all 0.5s ease;
 }
 
 @media screen and (max-width: 740px){
@@ -625,11 +645,43 @@
 
 /*Video Gallery*/
 
+.VideoGallery{
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140vh;
+}
+
+.VideoGallery__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.VideoGallery h1{
+    background-color: #7cfc00;
+    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-size: 100%;
+    margin-bottom: 0rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 80px;
+    padding-bottom: 20px;
+}
+
 .VideoGallery__vid {
+    justify-content: center;
+    text-align: center;
     margin: 3rem;
     height: 315px;
-    width: 560px;
-    margin-bottom: 200px;
+    width: auto;
+    max-width: 560px;
+    margin-bottom: 70px;
     border-radius: 4px;
     background-image: linear-gradient(
     to bottom, 
@@ -640,11 +692,28 @@
     color: #fff
 }
 
+.VideoGallery h3{
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
 .VideoGallery__vid:nth-child(2){
     background-image: linear-gradient(
     to bottom, 
     rgba(0,0,0,0) 0%, 
     rgba(0,0,0,0) 100%);
+}
+
+@media screen and (max-width: 740px){
+    .VideoGallery h1{
+        padding: 220px 0 0 0;
+        top: 200px;
+    }
+
+    .VideoGallery__container h1{
+        top: 410px;
+    }
 }
 
 /*About Page*/
@@ -676,12 +745,26 @@
     -moz-text-fill-color: transparent;
 }
 
+.about__container h3{
+    background-color: #7cfc00;
+    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-size: 100%;
+    font-size: 3rem;
+    padding-top: 110px;
+    max-width: 1000px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 .about__container h2{
     padding-top: 2.7rem;
     font-size: 2.2rem;
     color: #fff;
     max-width: 1000px;
     line-height: 30px;
+    padding-right: 30px;
 }
 
 .about__container p{
@@ -691,11 +774,13 @@
     margin-right: 40px;
     max-width: 1000px;
     line-height: 30px;
+    padding-right: 30px;
 }
 
 .about__container li{
     padding-top: 1.2rem;
     margin-left: 30px;
+    padding-right: 30px;
     font-size: 1.5rem;
     color: #fff;
     margin-right: 40px;
@@ -711,33 +796,6 @@
     }
 
     .about__container h1{
-        top: 410px;
+        padding-top: 300px;
     }
-
-    .about__container h2{
-        top: 510px;
-    }
-
-    .about__container p{
-        top: 550px;
-    }
-
-    .about__container__interests{
-        top: 27rem;
-    }
-
-    .about__container__resume{
-        top: 600px;
-    }
-
 }
-
-
-
-
-.content-section p, li{
-      max-width: 900px;
-      text-align: justify;
-      margin: 0 auto;
-      color: #fff;
-  }
