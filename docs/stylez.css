@@ -874,7 +874,7 @@
     background-color:#191919;
     z-index: 1;
     width: 100%;
-    height: 5000px;
+    height: auto;
     max-width: 1000px;
 }
 
@@ -899,7 +899,7 @@
 .corpus__container h1{
     text-align: center;
     background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-image: linear-gradient(to right, #00FF7F 0%, #00FF7F 40%, #7FFFD4 70%, #7FFFD4 100%);
     background-size: 100%;
     font-size: 3rem;
     padding-top: 110px;
@@ -916,7 +916,6 @@
     padding-top: 3rem;
     font-size: 2.2rem;
     color: #7FFFD4;
-    padding-left: 20px;
     max-width: 1000px;
     line-height: 30px;
     padding-right: 30px;
@@ -937,18 +936,13 @@
 }
 
 .corpus__container h5{
-    text-align: center;
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
-    background-size: 100%;
-    font-size: 3rem;
+    padding-top: 3rem;
+    font-size: 2.2rem;
+    color: #7FFFD4;
+    max-width: 1000px;
+    line-height: 30px;
     padding-top: 110px;
     padding-left: 20px;
-    max-width: 1000px;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 .corpus__container h2{
@@ -989,13 +983,13 @@
 
 .corpus__pic {
     margin: 3rem;
-    height: 525px;
-    width: 400px;
-    margin-bottom: 110px;
+    height: auto;
+    width: 90%;
+    margin-bottom: 10px;
     border-radius: 4px;
     background-size: cover;
     position: relative;
-    color: #fff
+    color: #fff;
 }
 
 .corpus__container a:hover {
@@ -1010,6 +1004,13 @@
     padding-top: 7rem;
   display: block;
   margin-left: 0;
+  width: 10%;
+}
+
+.corpus__line__center{
+    padding-top: 7rem;
+  display: block;
+  margin: auto;
   width: 10%;
 }
 
