@@ -1042,3 +1042,97 @@
     max-width: 1000px;
     line-height: 20px;
 }
+
+/*ProjectPage*/
+
+.ProjectCards{
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 10rem;
+}
+
+.ProjectCards h1{
+    background-color: #7cfc00;
+    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-size: 100%;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 80px;
+}
+
+.ProjectCards__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ProjectCards__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(17,17,17,0.6) 100%), 
+    url('images/WPvsHTML.JPG');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ProjectCards__card:nth-child(2){
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(17,17,17,0.6) 100%), 
+    url('images/corpusimg.PNG');
+}
+
+.ProjectCards__card:nth-child(3){
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0) 0%, 
+    rgba(17,17,17,0.6) 100%), 
+    url('images/SaturnV.png');
+}
+
+.ProjectCards h2{
+    padding-top: 470px;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.ProjectCards__card button{
+    color: #171717;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #7FFFD4;
+    position: absolute;
+    top: 420px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ProjectCards__card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+}
+
+.timeline{
+    width: 85%;
+    height: 720px;
+}
