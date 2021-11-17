@@ -674,6 +674,16 @@
     padding-bottom: 20px;
 }
 
+.VideoGallery h4{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    padding-left: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-top: 6rem;
+}
+
 .VideoGallery__vid {
     justify-content: center;
     text-align: center;
