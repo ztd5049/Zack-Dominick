@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI> 
-<teiHeader>
+<root> <!--A Root element must be added-->
+    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Poem 6 (J 281: 1861/1935)</title>
+                <title>Poem 6 (J 281: 1861/1935)</title> <!--Ending tag "title" is capitalized-->
                 <author>Emily Dickinson</author>
             </titleStmt>
             <publicationStmt>
-                <p>Fascicle 16: Dickinson's variants and published versions</p>
+                <p>Fascicle 16: Dickinson's variants and published versions</p> <!--Ending tag "p" did not have a ( / )-->
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -17,7 +17,7 @@
                     </msIdentifier>
                 </msDesc>
                 <bibl>
-                    <ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/>
+                    <ref target="http://www.cs.virginia.edu/~ajf2j/emily/"/> <!-- Ref tag was missing a ( / )-->
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -28,31 +28,31 @@
                 <listRef>
                     <ptr target="xml/1606variant.xml"/>
                     <ptr target="img/1606/fs1606a.jpg"/>
-                    <ptr target="img/1606/fs1606b.jpg"/>
+                    <ptr target="img/1606/fs1606b.jpg"/> <!-- An equal sign had to be added for a well formed attribute-->
                     <ptr target="img/1606/1606fha.jpg"/>
                     <ptr target="img/1606/1606fhb.jpg"/>
                     <ptr target="img/1606/1606fhMap.jpg"/>
-                    <ptr target="img/1606/fs1606Map.jpg"/>
-                </listRef>
+                    <ptr target="img/1606/fs1606Map.jpg"/> <!-- the self closing "ptr" element must be closed with a "/"-->
+                </listRef> <!-- The capital "L" had to be changed to match the start tag-->
             </div>
             <div type="witness">
                 <listWit>
                     <witness xml:id="df16">
                         <bibl>
-                            <title>ORIGINAL POEMS</title><author>Emily Dickinson</author>
+                            <title>ORIGINAL POEMS</title><author>Emily Dickinson</author> <!-- the title and suthor elements were interlocked-->
                         </bibl>
                     </witness>
-                    <witness xml:id="fh">
+                    <witness xml:id="fh"> <!-- Missing an end quotation-->
                         <bibl>
                             <title>Final Harvest: Emily Dickinson's Poems</title>
                             <author>Emily Dickinson</author>
                             <editor>Thomas H. Johnson</editor>
-                            <pub place ="Place">Boston</pub>
-                            <publisher>Little, Brown &amp; Company</publisher>
+                            <pub onj="place">Boston</pub> <!--Malformed attribute-->
+                            <publisher>Little, Brown &amp; Company</publisher> <!-- must use escape character to use "&"-->
                             <date>1961</date>
-                        </bibl>
+                        </bibl> <!-- Added an end tag for "bibl"-->
                     </witness>
-                    </listWit>
+                </listWit> <!-- Added end tag for "listWit"-->
             </div>
         </front>
         <body>
@@ -105,7 +105,7 @@
                     </app>
                     and Cold—
                 </l>
-                <l n="10">But that will hold—</l>
+                <l n="10">But that will hold—</l> <!-- missing quotation mark-->
                 <l n="11">If any are not sure—</l>
                 <l n="12">We show them—prayer—</l>
                 <l n="13">But we, who know,</l>
@@ -115,16 +115,16 @@
                 <l n="15">Looking at Death, is Dying—</l>
                 <l n="16">Just let go the Breath—</l>
                 <l n="17">And not the pillow at your Cheek</l>
-                <l n="18">So Slumbereth—</l>
+                <l n="18">So Slumbereth—</l> <!--Missing "/" in end tag-->
             </lg>
             <lg>
                 <l n="19">Others, Can wrestle—</l>
-                <l n="20">Yours, is done—</l>
+                <l n="20">Yours, is done— </l> <!--Missing end tag-->
                 <l n="21">
                     And so of
                     <app>
                         <rdg wit="#df16">Wo</rdg>
-                        <rdg wit="#fh">Woe</rdg>
+                        <rdg wit="#fh">Woe</rdg> <!--Missing "/" in end tag-->
                     </app>
                     , bleak dreaded—
                     <app>
@@ -139,4 +139,4 @@
             </lg>
         </body>
     </text>
-</TEI>   
+</root>
