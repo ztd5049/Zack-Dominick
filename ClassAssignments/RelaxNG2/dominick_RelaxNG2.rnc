@@ -1,0 +1,19 @@
+start = root
+root = element root {mixed{(meta | poem)+}}
+meta = element meta {text, mixed{( title | author | date | VisData | location)*}}
+    title = element title {text}
+    author = element author {text}
+    date = element date {text}
+    VisData = element VisData {LineLoc+, text}
+        LineLoc = attribute LineLoc {xsd:integer}
+
+poem = element poem {line+}
+    line = element line {n, text, mixed{(rep | location | name | format | time | year)*}}
+        n = attribute n {xsd:integer}
+        rep = attribute rep {"true" | "false"}
+        location = element location {text}
+        name = element name {text}
+        format = element format {text, style+}
+            style = attribute style {"bold" | "underline" | "italics" | "caps"}
+        time = element time {text}
+        year = element year {text}
