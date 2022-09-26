@@ -1,0 +1,20 @@
+start = root
+root = element root {meta, song}
+    meta = element meta {title, performer+, writer+, source+, runtime}
+        title = element title {text}
+        performer = element performer {text}
+        writer = element writer {text}
+        source = element source {text}
+        runtime = element runtime {xsd:integer}
+        
+    song = element song {(verse | preChorus | chorus | postChorus | bridge | outro)+}
+        verse = element verse {n, line+}
+            n = attribute n {xsd:integer}
+            line = element line {n, LineRep?, text}
+                LineRep = attribute LineRep {("true" | "false")}
+            
+        preChorus = element preChorus {n, line+}
+        chorus = element chorus {n, line+}
+        postChorus = element postChorus {n, line+}
+        bridge = element bridge {n, line+}
+        outro = element outro {n, line+}

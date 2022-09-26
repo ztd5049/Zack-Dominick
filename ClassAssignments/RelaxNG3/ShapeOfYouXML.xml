@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ShapeOfYouRelaxNG.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <meta>
+        <title>Shape of You</title>
+
+        <performer>Ed Sheeran</performer>
+
+        <writer>Johnny McDaid</writer>
+        <writer>Steve Mac</writer>
+        <writer>Ed Sheeran</writer>
+        <writer>Kandi Burruss</writer>
+        <writer>Kevin Briggs</writer>
+        <writer>Tameka Cottle</writer>
+
+        <source>Atlanta Records UK</source>
+        <source>Spirit Music Group</source>
+        <source>Universal Music Publishing</source>
+
+        <runtime>233</runtime>
+    </meta>
+    <song>
+        <verse n="1">
+            <line n="1">The club isn't the best place to find a lover</line>
+            <line n="2">So the bar is where I go</line>
+            <line n="3">Me and my friends at the table doing shots</line>
+            <line n="4">Drinking fast and then we talk slow</line>
+            <line n="5">Come over and start up a conversation with just me</line>
+            <line n="6">And trust me I'll give it a chance now</line>
+            <line n="7">Take my hand, stop, put Van the Man on the jukebox</line>
+            <line n="8">And then we start to dance, and now I'm singing like</line>
+        </verse>
+        <preChorus n="1">
+            <line n="9">Girl, you know I want your love</line>
+            <line n="10">Your love was handmade for somebody like me</line>
+            <line n="11">Come on now, follow my lead</line>
+            <line n="12">I may be crazy, don't mind me</line>
+            <line n="13">Say, boy, let's not talk too much</line>
+            <line n="14">Grab on my waist and put that body on me</line>
+            <line n="15">Come on now, follow my lead</line>
+            <line n="16">Come, come on now, follow my lead</line>
+        </preChorus>
+        <chorus n="1">
+            <line n="17">I'm in love with the shape of you</line>
+            <line n="18">We push and pull like a magnet do</line>
+            <line n="19">Although my heart is falling too</line>
+            <line n="20">I'm in love with your body</line>
+            <line n="21">And last night you were in my room</line>
+            <line n="22">And now my bedsheets smell like you</line>
+            <line n="23">Every day discovering something brand new</line>
+            <line n="24" LineRep="true">I'm in love with your body</line>
+        </chorus>
+        <postChorus n="1">
+            <line n="25" LineRep="true">I'm in love with your body</line>
+            <line n="26" LineRep="true">I'm in love with your body</line>
+            <line n="27" LineRep="true">I'm in love with your body</line>
+            <line n="28" LineRep="true">Every day discovering something brand new</line>
+            <line n="29" LineRep="true">I'm in love with the shape of you</line>
+        </postChorus>
+        <verse n="2">
+            <line n="30">One week in we let the story begin</line>
+            <line n="31">We're going out on our first date</line>
+            <line n="32">You and me are thrifty, so go all you can eat</line>
+            <line n="33">Fill up your bag and I fill up a plate</line>
+            <line n="34">We talk for hours and hours about the sweet and the sour</line>
+            <line n="35">And how your family is doing okay</line>
+            <line n="36">Leave and get in a taxi, then kiss in the backseat</line>
+            <line n="37">Tell the driver make the radio play, and I'm singing like</line>
+        </verse>
+        <preChorus n="2">
+            <line n="38" LineRep="true">Girl, you know I want your love</line>
+            <line n="39" LineRep="true">Your love was handmade for somebody like me</line>
+            <line n="40" LineRep="true">Come on now, follow my lead</line>
+            <line n="41" LineRep="true">I may be crazy, don't mind me</line>
+            <line n="42" LineRep="true">Say, boy, let's not talk too much</line>
+            <line n="43" LineRep="true">Grab on my waist and put that body on me</line>
+            <line n="44" LineRep="true">Come on now, follow my lead</line>
+            <line n="45" LineRep="true">Come, come on now, follow my lead</line>
+        </preChorus>
+        <chorus n="2">
+            <line n="46" LineRep="true">I'm in love with the shape of you</line>
+            <line n="47" LineRep="true">We push and pull like a magnet do</line>
+            <line n="48" LineRep="true">Although my heart is falling too</line>
+            <line n="49" LineRep="true">I'm in love with your body</line>
+            <line n="50" LineRep="true">And last night you were in my room</line>
+            <line n="51" LineRep="true">And now my bedsheets smell like you</line>
+            <line n="52" LineRep="true">Every day discovering something brand new</line>
+            <line n="53" LineRep="true">I'm in love with your body</line>
+        </chorus>
+        <postChorus n="2">
+            <line n="54" LineRep="true">I'm in love with your body</line>
+            <line n="55" LineRep="true">I'm in love with your body</line>
+            <line n="56" LineRep="true">I'm in love with your body</line>
+            <line n="57" LineRep="true">Every day discovering something brand new</line>
+            <line n="58" LineRep="true">I'm in love with the shape of you</line>
+        </postChorus>
+        <bridge n="1">
+            <line n="59">Come on, be my baby, come on</line>
+            <line n="60" LineRep="true">Come on, be my baby, come on</line>
+            <line n="61" LineRep="true">Come on, be my baby, come on</line>
+            <line n="62" LineRep="true">Come on, be my baby, come on</line>
+            <line n="63" LineRep="true">Come on, be my baby, come on</line>
+            <line n="64" LineRep="true">Come on, be my baby, come on</line>
+            <line n="65" LineRep="true">Come on, be my baby, come on</line>
+            <line n="66" LineRep="true">Come on, be my baby, come on</line>
+        </bridge>
+        <chorus n="3">
+            <line n="67" LineRep="true">I'm in love with the shape of you</line>
+            <line n="68" LineRep="true">We push and pull like a magnet do</line>
+            <line n="69" LineRep="true">Although my heart is falling too</line>
+            <line n="70" LineRep="true">I'm in love with your body</line>
+            <line n="71" LineRep="true">Last night you were in my room</line>
+            <line n="72" LineRep="true">And now my bedsheets smell like you</line>
+            <line n="73" LineRep="true">Every day discovering something brand new</line>
+            <line n="74" LineRep="true">I'm in love with your body</line>
+        </chorus>
+        <outro n="1">
+            <line n="75" LineRep="true">Come on, be my baby, come on</line>
+            <line n="76" LineRep="true">Come on, be my baby, come on</line>
+            <line n="77" LineRep="true">I'm in love with your body</line>
+            <line n="78" LineRep="true">Come on, be my baby, come on</line>
+            <line n="79" LineRep="true">Come on, be my baby, come on</line>
+            <line n="80" LineRep="true">I'm in love with your body</line>
+            <line n="81" LineRep="true">Come on, be my baby, come on</line>
+            <line n="82" LineRep="true">Come on, be my baby, come on</line>
+            <line n="83" LineRep="true">I'm in love with your body</line>
+            <line n="84" LineRep="true">Every day discovering something brand new</line>
+            <line n="85" LineRep="true">I'm in love with the shape of you</line>
+        </outro>
+    </song>
+</root>
