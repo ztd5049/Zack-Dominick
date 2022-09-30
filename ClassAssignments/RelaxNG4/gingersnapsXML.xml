@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="gingersnapsRelaxNG.rnc" type="application/relax-ng-compact-syntax"?>
+<xml>
+    <recipe>Gingersnaps</recipe>
+
+    <desc>These crunchy, spicy rounds with their cracked, sugary tops are equally at home dunked in
+        tea, coffee, or milk, and frequently enjoyed during the November/December holiday season.
+        But they're just as welcome on a mellow, golden, late-September afternoon, with a
+        comfortable lounge chair and a large glass of fresh-squeezed lemonade.</desc>
+    <prep><header>Prep</header>
+        <num>12</num>
+        <unit>mins</unit> Bake <num>11</num> to <num>13</num>
+        <unit>mins</unit> Total <num>23</num>
+        <unit>mins</unit></prep>
+    <yield><header>Yield</header> about <num>5</num>
+        <unit>dozen</unit> cookies Gingersnaps</yield>
+    <ingredients><header>Ingredients</header> Cookies <num type="fraction">3/4</num>
+        <unit>cup</unit>
+        <altUnit>(<num>138</num><unit>g</unit>)</altUnit> vegetable shortening* <num>1</num>
+        <unit>cup</unit>
+        <altUnit>(<num>198</num><unit>g</unit>)</altUnit> granulated sugar <num type="fraction"
+            >1/2</num>
+        <unit>teaspoon</unit> salt <num>2</num>
+        <unit>teaspoons</unit> baking soda <num>1</num> large egg <num type="fraction">1/3</num>
+        <unit>cup</unit>
+        <altUnit>(<num>113</num><unit>g</unit>)</altUnit> molasses <num type="mixedNum">2 1/3</num>
+        <unit>cups</unit>
+        <altUnit>(<num>280</num><unit>g</unit>)</altUnit> King Arthur Unbleached All-Purpose Flour
+            <num>1</num> to <num>2</num>
+        <unit>teaspoons</unit> ginger <num type="fraction">1/2</num>
+        <unit>teaspoon</unit> cloves <num>1</num>
+        <unit>teaspoon</unit> cinnamon *Can you substitute butter for the vegetable shortening? Yes;
+        but the cookies will be soft, not crisp. <header>Coating</header>
+        <num type="fraction">1/4</num>
+        <unit>cup</unit>
+        <altUnit>(<num>50</num><unit>g</unit>)</altUnit> granulated sugar <num>1</num>
+        <unit>teaspoon</unit> cinnamon</ingredients>
+
+    <instructions><header>Instructions</header> Preheat the oven to <num>375</num><unit>°F</unit>.
+        Lightly grease (or line with parchment) <num>two</num> baking sheets. Beat together the
+        shortening, sugar, salt, and baking soda. Beat in the egg, then the molasses. Add the flour
+        and spices, beating to make a smooth, fairly stiff dough. To make the coating, combine the
+        sugar and cinnamon, and place in a shallow pan or dish. Drop the dough in
+            <num>1</num><unit>inches</unit> balls into the cinnamon-sugar mixture; a teaspoon cookie
+        scoop is perfect here. Roll the balls in the sugar to coat, then transfer them to the
+        prepared baking sheets, leaving at least <num type="mixedNum">1 1/2</num><unit>inches</unit>
+        between them; they'll spread as they bake. Bake the cookies for <num>11</num>
+        <unit>minutes</unit>, for cookies that are crisp around the edges, and "bendy" in the
+        center. Bake for <num>13</num>
+        <unit>minutes</unit>, for cookies that are crisp/crunchy all the way through. Remove the
+        cookies from the oven, and cool right on the pan, or on a rack. Cool completely, then store
+        tightly wrapped, at room temperature.</instructions>
+</xml>

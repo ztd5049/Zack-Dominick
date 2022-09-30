@@ -1,0 +1,16 @@
+start = xml
+xml = element xml {recipe, desc, prep, yield, ingredients, instructions}
+    recipe = element recipe {text}
+    desc = element desc {text}
+    prep = element prep {mixed{(header | num | unit | altUnit)*}}
+        header = element header {text}
+        num = element num {(xsd:int | text), type?}
+            type = attribute type {("fraction" | "mixedNum")}
+        unit = element unit {("mins" | "minutes" | "g" | "cup" | "cups" | "teaspoon" | "teaspoons" | "inches" | "°F" | "dozen")}
+    yield = element yield {mixed{(header | num | unit | altUnit)*}}
+    ingredients = element ingredients {mixed{(header | num | unit | altUnit)*}}
+        altUnit = element altUnit {mixed{(num+, unit*)}}
+    instructions = element instructions {mixed{(header | num | unit | altUnit)*}}
+        
+    
+
