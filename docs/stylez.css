@@ -99,6 +99,21 @@
     color: #131313;
 }
 
+.green-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color:#3eee55;
+    color: #131313;
+}
+
 .button:hover{
     background: #4837ff;
     transition: all 0.5s ease;

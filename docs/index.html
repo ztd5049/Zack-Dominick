@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+
+    <script type="text/javascript" src="interact.js">/**/</script>
 </head>
 <body>
     <!--Navbar Section-->
@@ -34,6 +36,9 @@
                 <li class="navbar__item">
                     <a href="projects.html" class="navbar__links"> Projects </a>
                 </li>
+                <li class="navbar__item">
+                    <button class="button" title="Click for green, Double click for normal"> Green Mode </button>
+                </li>
                 <li class="navbar__btn">
                     <a href="about.html" class="button"> About Me </a>
                 </li>
@@ -43,7 +48,7 @@
     
     <!-- Body Page Section-->
     <div class="main">
-        <div class="main__container">
+        <div class="main__container" id="colorToggle">
             <div class="main__content">
                 <h1>Musician</h1>
                 <h2>Photographer</h2>
