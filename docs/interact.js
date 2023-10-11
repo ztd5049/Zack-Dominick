@@ -1,18 +1,18 @@
 window.addEventListener('DOMContentLoaded',init,false);
             
 function init() {
-    var buttons = document.getElementsByTagName("button")
-buttons[0].addEventListener('click', greenMode,false)
-buttons[0].addEventListener('dblclick', grayMode,false)
-}
+    var icon = document.getElementById("mIcon");
 
-function greenMode() {
-    var colorMe1 = document.getElementById("colorToggle") 
-    {colorMe1.style.backgroundColor = "green";
+    icon.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme")){
+            icon.src = "images/moon.png";
+        }else{
+            icon.src = "images/sun.png";
+        }
     }
 }
 
-function grayMode() {
-    var colorMe1 = document.getElementById("colorToggle")
-    {colorMe1.style.backgroundColor = "#191919"}
-}
+
+/*JavaScriptExercise2*/
+

@@ -1,3 +1,33 @@
+#mIcon{
+    cursor: pointer;
+    scale: 60%;
+}
+
+:root{
+    --primaryNav-color: #131313;
+    --primaryBG-color: #191919;
+    --primaryFT-color: #131313;
+    --primaryText-color: #fff;
+    --primaryFancyText-color: linear-gradient(to right, #20B2AA 30%, #7FFF00 100%);
+    --primaryCurrent-color: #7cfc00;
+}
+.light-theme{
+    --primaryNav-color: #f7f7f7;
+    --primaryBG-color: #e0e0e0;
+    --primaryFT-color: #f7f7f7;
+    --primaryText-color: #131313;
+    --primaryFancyText-color: #131313;
+    --primaryCurrent-color: #0aa05a;
+}
+
+#currentPageNav{
+    color: var(--primaryCurrent-color);
+    font-weight: 700;
+}
+
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +42,7 @@
   }
 
 .navbar{
-    background: #131313;
+    background: var(--primaryNav-color);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -35,8 +65,8 @@
 }
 
 #navbar__logo{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #20B2AA 30%, #7FFF00 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -67,7 +97,7 @@
 }
 
 .navbar__links{
-    color: #fff;
+    color: var(--primaryText-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,28 +129,13 @@
     color: #131313;
 }
 
-.green-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background-color:#3eee55;
-    color: #131313;
-}
-
 .button:hover{
     background: #4837ff;
     transition: all 0.5s ease;
 }
 
 .navbar__links:hover{
-    color: #7cfc00;
+    color: var(--primaryCurrent-color);
     transition: all 0.5s ease;
 }
 
@@ -144,7 +159,7 @@
         transition: all 0.5s ease;
         height: 40vh;
         z-index: -1;
-        background: #131313;
+        background: var(--primaryNav-color);
         padding-top: 30px;
     }
 
@@ -189,7 +204,7 @@
 /*Main Body Section*/
 
 .main{
-    background-color: #191919;
+    background-color: var(--primaryBG-color);
 }
 
 .main__container{
@@ -198,7 +213,7 @@
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    background-color: #191919;
+    background-color: var(--primaryBG-color);
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -207,8 +222,8 @@
 
 .main__content h1{
     font-size: 4rem;
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #20B2AA 0%, #7FFF00 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -218,8 +233,8 @@
 
 .main__content h2{
     font-size: 4rem;
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #20B2AA 40%, #7FFF00 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -229,8 +244,8 @@
 
 .main__content p{
     font-size: 4rem;
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #7FFFD4 50%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -360,7 +375,7 @@
 /* PhotoCards */
 
 .PreviewCards{
-    background: #191919;
+    background: var(--primaryBG-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -368,8 +383,8 @@
 }
 
 .PreviewCards h1{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     margin-bottom: 2rem;
     font-size: 2.5rem;
@@ -452,7 +467,7 @@
 /* Picture Gallery */
 
 .PictureGallery{
-    background: #191919;
+    background: var(--primaryBG-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -460,8 +475,8 @@
 }
 
 .PictureGallery h1{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     margin-bottom: 0rem;
     font-size: 2.5rem;
@@ -505,7 +520,7 @@
     url('images/RockStackGit.jpg');
     background-size: cover;
     position: relative;
-    color: #fff
+    color: var(--primaryText-color);
 }
 
 .PictureGallery__pic:nth-child(2){
@@ -580,7 +595,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0 50px;
-    background-color: #191919;
+    background-color: var(--primaryBG-color);
     z-index: 1;
     width: 100%;
     height: 200vh;
@@ -588,8 +603,8 @@
 }
 
 .writings__container h1{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     font-size: 3rem;
     position: absolute;
@@ -603,7 +618,7 @@
 
 .writings__container h2{
     font-size: 2.2rem;
-    color: #fff;
+    color: var(--primaryText-color);
     position: absolute;
     top: 205px;
     max-width: 1000px;
@@ -612,7 +627,7 @@
 .writings__container p{
     top: 240px;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     position: absolute;
     max-width: 1000px;
 }
@@ -661,7 +676,7 @@
 /*Video Gallery*/
 
 .VideoGallery{
-    background: #191919;
+    background: var(--primaryBG-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -676,8 +691,8 @@
 }
 
 .VideoGallery h1{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     margin-bottom: 2rem;
     font-size: 2.5rem;
@@ -692,7 +707,7 @@
 .VideoGallery h4{
     text-align: center;
     font-size: 2rem;
-    color: #fff;
+    color: var(--primaryText-color);
     padding-left: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -714,13 +729,13 @@
     rgba(0,0,0,0) 100%);
     background-size: cover;
     position: relative;
-    color: #fff
+    color: var(--primaryText-color);
 }
 
 .VideoGallery h3{
     padding-bottom: 20px;
     font-size: 30px;
-    color: #fff;
+    color: var(--primaryText-color);
 }
 
 .VideoGallery__vid:nth-child(2){
@@ -750,7 +765,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0 50px;
-    background-color: #191919;
+    background-color: var(--primaryBG-color);
     z-index: 1;
     width: 100%;
     height: 200vh;
@@ -758,8 +773,8 @@
 }
 
 .about__container h1{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     font-size: 3rem;
     padding-top: 110px;
@@ -771,8 +786,8 @@
 }
 
 .about__container h3{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     font-size: 3rem;
     padding-top: 110px;
@@ -786,7 +801,7 @@
 .about__container h2{
     padding-top: 2.7rem;
     font-size: 2.2rem;
-    color: #fff;
+    color: var(--primaryText-color);
     max-width: 1000px;
     line-height: 30px;
     padding-right: 30px;
@@ -795,7 +810,7 @@
 .about__container p{
     padding-top: 1.2rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     margin-right: 40px;
     max-width: 1000px;
     line-height: 30px;
@@ -807,7 +822,7 @@
     margin-left: 30px;
     padding-right: 30px;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     margin-right: 40px;
     max-width: 1000px;
     line-height: 20px;
@@ -826,7 +841,7 @@
 }
 
 .footer__container{
-    background-color: #131313;
+    background-color: var(--primaryFT-color);
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -835,8 +850,8 @@
 }
 
 #footer__logo{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #f1f1f1 30%, #9f9f9f 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -851,7 +866,7 @@
 }
 
 .social__icons--link{
-    color: #fff;
+    color: var(--primaryText-color);
     font-size: 30px;
 }
 
@@ -891,12 +906,12 @@
 
 /*Corpus Section*/
 .corpus__main{
-    background-color: #191919;
+    background-color: var(--primaryBG-color);
 }
 
 .corpus__container{
     margin: auto;
-    background-color:#191919;
+    background-color:var(--primaryBG-color);
     z-index: 1;
     width: 100%;
     height: auto;
@@ -916,15 +931,14 @@
     url('images/RockStackGit.jpg');
     background-size: cover;
     position: relative;
-    color: #fff
+    color: #fff;
 }
 
 
 
 .corpus__container h1{
-    text-align: center;
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #00FF7F 40%, #7FFFD4 70%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     font-size: 3rem;
     padding-top: 110px;
@@ -950,7 +964,7 @@
     text-align: center;
     padding-top: 1.2rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     padding-left: 20px;
     max-width: 1000px;
     line-height: 30px;
@@ -973,7 +987,7 @@
 .corpus__container h2{
     padding-top: 6rem;
     font-size: 2.2rem;
-    color: #fff;
+    color: var(--primaryText-color);
     padding-left: 20px;
     max-width: 1000px;
     line-height: 30px;
@@ -983,7 +997,7 @@
 .corpus__container p{
     padding-top: 1.2rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     padding-left: 20px;
     max-width: 1000px;
     line-height: 30px;
@@ -995,7 +1009,7 @@
     margin-left: 60px;
     padding-right: 30px;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     margin-right: 40px;
     max-width: 1000px;
     line-height: 20px;
@@ -1054,7 +1068,7 @@
     border-radius: 4px;
     background-size: cover;
     position: relative;
-    color: #fff
+    color: var(--primaryText-color);
 }
 
 .corpus__list__container li{
@@ -1062,7 +1076,7 @@
     margin-left: 150px;
     padding-right: 30px;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     margin-right: 40px;
     max-width: 1000px;
     line-height: 20px;
@@ -1071,7 +1085,7 @@
 /*ProjectPage*/
 
 .ProjectCards{
-    background: #191919;
+    background: var(--primaryBG-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1080,8 +1094,8 @@
 }
 
 .ProjectCards h1{
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #7FFFD4 0%, #7FFFD4 21%, #7FFFD4 52%, #7FFFD4 78%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     margin-bottom: 2rem;
     font-size: 2.5rem;
@@ -1171,19 +1185,19 @@
 }
 
 .website_right{
-    color: #fff;
+    color: var(--primaryText-color);
     padding-left: 40px;
 }
 
 /*Game Analysis*/
 
 .ga__main{
-    background-color: #191919;
+    background-color: var(--primaryBG-color);
 }
 
 .ga__container{
     margin: auto;
-    background-color:#191919;
+    background-color:var(--primaryBG-color);
     z-index: 1;
     width: 100%;
     height: auto;
@@ -1203,15 +1217,15 @@
     url('images/RockStackGit.jpg');
     background-size: cover;
     position: relative;
-    color: #fff
+    color: #fff;
 }
 
 
 
 .ga__container h1{
     text-align: center;
-    background-color: #7cfc00;
-    background-image: linear-gradient(to right, #00FF7F 0%, #00FF7F 40%, #7FFFD4 70%, #7FFFD4 100%);
+    background-color: var(--primaryFancyText-color);
+    background-image: var(--primaryFancyText-color);
     background-size: 100%;
     font-size: 3rem;
     padding-top: 110px;
@@ -1237,7 +1251,7 @@
     text-align: center;
     padding-top: 1.2rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     padding-left: 20px;
     max-width: 1000px;
     line-height: 30px;
@@ -1260,7 +1274,7 @@
 .ga__container h2{
     padding-top: 6rem;
     font-size: 2.2rem;
-    color: #fff;
+    color: var(--primaryText-color);
     padding-left: 20px;
     max-width: 1000px;
     line-height: 30px;
@@ -1270,7 +1284,7 @@
 .ga__container p{
     padding-top: 1.2rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     padding-left: 20px;
     max-width: 1000px;
     line-height: 30px;
@@ -1282,7 +1296,7 @@
     margin-left: 60px;
     padding-right: 30px;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     margin-right: 40px;
     max-width: 1000px;
     line-height: 20px;
@@ -1341,7 +1355,7 @@
     border-radius: 4px;
     background-size: cover;
     position: relative;
-    color: #fff
+    color: var(--primaryText-color);
 }
 
 .ga__list__container li{
@@ -1349,7 +1363,7 @@
     margin-left: 150px;
     padding-right: 30px;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primaryText-color);
     margin-right: 40px;
     max-width: 1000px;
     line-height: 20px;
