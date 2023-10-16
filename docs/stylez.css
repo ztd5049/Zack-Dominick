@@ -1,3 +1,65 @@
+/*SVG*/
+
+svg:hover #sheen{
+    transform: translateY(-130px) rotate(45deg);
+   }
+
+svg:hover #sheen-2{
+    transform: translateY(-150px) rotate(45deg);
+   }
+
+/*svg:hover #sheen-border_bottom {
+    opacity: 100;
+    transform: translateY(130px);
+    scale: 100%;
+    width: 120px;
+}
+
+svg:hover #sheen-border_bottom {
+    opacity: 100;
+    transform: translateY(130px);
+    scale: 100%;
+    width: 120px;
+}*/
+
+/*svg:hover #sheen-border_right {
+    transform: translate( -130px);
+    opacity: 100;
+
+}
+*/
+#sheen{
+    transition: all 1s ease;
+}
+
+#sheen-2{
+    transition: all 1.6s ease;
+}
+
+/*#sheen-border_bottom{
+    transition: all 1s ease;
+}
+
+#sheen-border_right{
+    transition: all 1s ease;
+}
+
+#sheen-border_top{
+    transition: all 1s ease;
+}
+
+#sheen-border_left{
+    transition: all 1s ease;
+}*/
+
+
+
+
+
+
+/*Light Mode Variables*/
+/*Light Mode Variables*/
+
 #mIcon{
     cursor: pointer;
     scale: 60%;
@@ -10,6 +72,7 @@
     --primaryText-color: #fff;
     --primaryFancyText-color: linear-gradient(to right, #20B2AA 30%, #7FFF00 100%);
     --primaryCurrent-color: #7cfc00;
+    --primaryHead-color: #7FFFD4;
 }
 .light-theme{
     --primaryNav-color: #f7f7f7;
@@ -18,7 +81,10 @@
     --primaryText-color: #131313;
     --primaryFancyText-color: #131313;
     --primaryCurrent-color: #0aa05a;
+    --primaryHead-color: #131313;
 }
+/*Light Mode Variables*/
+/*Light Mode Variables*/
 
 #currentPageNav{
     color: var(--primaryCurrent-color);
@@ -954,7 +1020,7 @@
     text-align: center;
     padding-top: 3rem;
     font-size: 2.2rem;
-    color: #7FFFD4;
+    color: var(--primaryHead-color);
     max-width: 1000px;
     line-height: 30px;
     padding-right: 30px;
@@ -977,7 +1043,7 @@
 .corpus__container h5{
     padding-top: 3rem;
     font-size: 2.2rem;
-    color: #7FFFD4;
+    color: var(--primaryHead-color);
     max-width: 1000px;
     line-height: 30px;
     padding-top: 110px;
@@ -1241,7 +1307,7 @@
     text-align: center;
     padding-top: 3rem;
     font-size: 2.2rem;
-    color: #7FFFD4;
+    color: var(--primaryHead-color);
     max-width: 1000px;
     line-height: 30px;
     padding-right: 30px;
@@ -1264,7 +1330,7 @@
 .ga__container h5{
     padding-top: 3rem;
     font-size: 2.2rem;
-    color: #7FFFD4;
+    color: var(--primaryHead-color);
     max-width: 1000px;
     line-height: 30px;
     padding-top: 110px;
