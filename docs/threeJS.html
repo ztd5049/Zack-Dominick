@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ZackDominick</title>
+    <link rel="stylesheet" href="stylez.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <script type="text/javascript" src="interact.js">/**/</script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">
+                <img class="WaveF" src="images/WaveformPianoGlitch1.png" alt="WaveformPiano"/>
+                Zack Dominick</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="pictures.html" class="navbar__links"> Pictures </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="videos.html" class="navbar__links"> Videos </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="projects.html" class="navbar__links"> Projects </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="about.html" class="button"> About Me </a>
+                </li>
+            </ul>
+            <img src="images/sun.png" id="mIcon" alt="lightmode">
+        </div>
+    </nav>
+    <!--Body Section-->
+    <div class="ga__main">
+        <div class="ga__container">
+        <h1>Three JS Tutorial</h1>
+        <h2>Install Node.js</h2>
+            <p>
+                The first step in the process is to install "Node.JS". Before installing, check to see if you have it installed.
+            </p>
+            <br>
+            <ul>
+                <li>
+                    Check if Node is already installed by entering this command in Windows PowerShell
+                </li>  
+                <p style="padding-left: 80px; padding-top: 30px; padding-bottom: 20px;">
+                    node -v
+                </p>
+                <li>
+                    If it is installed, the command line will respond with a version number. A version number may look like this:
+                </li>
+                <p style="padding-left: 80px; padding-top: 30px; padding-bottom: 20px;">
+                    v0.10.35
+                </p>
+            </ul>
+            <p>
+                If it is not already installed, use <a href="https://nodejs.org/en/">this link</a> to install the recommended version.
+            </p>
+
+
+<img src="images/SeaFoamLine.png" alt="Line" class="ga__line"/>
+
+            <h2>Install NPM</h2>
+            <p>
+                Next, you have to install NPM or "Node Package Manager"
+            </p>
+            <br>
+            <ul>
+                <li>
+                    Again check to see if it is already installed with the following command
+                </li>  
+                <p style="padding-left: 80px; padding-top: 30px; padding-bottom: 20px;">
+                    npm -v
+                </p>
+            </ul>
+            <p>
+                If it is not already installed, simply enter the following command into Windows PowerShell
+            </p>
+            <p style="padding-left: 80px; padding-top: 30px; padding-bottom: 20px;">
+                npm install -g npm
+            </p>
+
+<img src="images/SeaFoamLine.png" alt="Line" class="ga__line"/>
+
+            <h2>Create an empty directory and install VITE</h2>
+            <p>
+                Start by creating a project directory somewhere you can find it later and naming it something like "ThreeJS-Project"
+            </p>
+            <br>
+            <p>
+                Next, we will be installing VITE as the project base for our ThreeJS.
+            </p>
+            <ul>
+                <li>
+                    "cd" into your newly created directory. My "cd" command string looks like this:
+                </li>  
+                <p style="padding-left: 80px; padding-top: 30px; padding-bottom: 20px;">
+                    cd Documents\GitHub\ThreeJS-Project
+                </p>
+            </ul>
+            <p>
+                Once you are in your directory, enter the following command.
+            </p>
+            <p style="padding-left: 80px; padding-top: 30px; padding-bottom: 20px;">
+                npm init vite
+            </p>
+            <p>
+                It will then initiate four prompts.
+            </p>
+            <ul>
+                <li>
+                    Name your project (Simply type a project name)
+                </li>  
+                <li>
+                    Name your package (Press enter for default)
+                </li>
+                <li>
+                    Use the arrow keys to select vanilla, then press enter
+                </li>
+                <li>
+                    Use the arrow keys to select JavaScript, then press enter
+                </li>
+                <br>
+                <br>
+                <p>
+                    After completing these, it will create a new folder within your project directory. If you are having trouble with the arrow keys not working, use Windows PowerShell or Windows Terminal.
+                </p>
+            </ul>
+            <p>
+                Lastly, we need to do the follow up prompts suggested after the project was created.
+            </p>
+            <ul>
+                <li>
+                    Simply "cd" into the project directory that was just created, and enter the following command:
+                </li>  
+                <p style="padding-left: 80px; padding-top: 30px; padding-bottom: 20px;">
+                    npm install
+                </p>
+            </ul>
+
+<img src="images/SeaFoamLine.png" alt="Line" class="ga__line"/>
+
+            <h2>Install Three JS</h2>
+            <p>
+                Next we will install Three.js itself. 
+            </p>
+            <ul>
+                <li>
+                    Again, "cd" into the project directory that was just created, and enter the following command:
+                </li>  
+                <p style="padding-left: 80px; padding-top: 30px; padding-bottom: 20px;">
+                    npm install --save three
+                </p>
+            </ul>
+            <br>
+            <p>
+                This will add a few files to your directory. A new folder called <b>node_modules</b>, a <b>package.json</b>, and a <b>package-lock.json</b>.
+            </p>
+            <ul>
+                <li>
+                    These are pregenerated and you don't have to worry about them!
+                </li>  
+            </ul>
+
+
+
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer__container">
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="index.html" id="footer__logo">
+                        <img class="WaveF" src="images/WaveformPianoGlitch1.png" alt="WaveformPiano"/>
+                        Zack Dominick</a>
+                </div>
+                <div class="social__icons">
+                    <a href="https://www.youtube.com/channel/UCviy9SqDK6eUN7_xTOsf3vA" class="social__icons--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zhoutche/" class="social__icons--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
